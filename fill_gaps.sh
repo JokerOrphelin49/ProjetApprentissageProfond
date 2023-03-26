@@ -20,7 +20,7 @@ for file in $file_list; do
     new_name="${dir_name}_${new_number}.jpg"
 
     # rename the file
-    mv "$file" "$new_name"
+    git mv "$file" "$new_name"
   fi
 
   # increment the counter
