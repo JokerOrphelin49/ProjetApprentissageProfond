@@ -11,6 +11,6 @@ for file in *.jpg; do
     ((count++))
     number=$(printf "%03d" $count)
     new_name="${dir_name}_$number.jpg"
-    git mv "$file" "$new_name"
+    git "mv "$file" "$new_name"
   fi
 done
